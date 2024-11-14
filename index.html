@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img
+          class="profilbild"
+          src="images/Alexandra.jpeg"
+          alt="Självporträtt på Alexandra"
+          loading="eager"
+          width="1400"
+          height="2204"
+        />
+        <h1>Alexandra Johansen</h1>
+        <h2>Färdig frontend developer våren 2026</h2>
+      </header>
+
+        <section class="splide" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="images/blommor.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/fjärilar.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/fåglar.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <main>
+            <section>
+                <h3>Om mig</h3>
+                <p>
+                Jag är en 25-årig tjej som bor i Stockholm. Jag har alltid varit
+                intresserad av att skapa och designa. Jag har tidigare jobbat som
+                florist och har alltid tyckt om att skapa vackra arrangemang. Jag
+                har även en passion för att fotografera och har en stor samling
+                bilder på naturen.
+                </p>
+            </section>
+            <section>
+                <h3>Projekt</h3>
+                <p>
+                Här är några av mina projekt som jag har gjort under min tid på
+                utbildningen. Jag har valt att visa upp några av mina favoriter.
+                </p>
+                <ul>
+                <li>
+                    <a href="project1.html">Projekt 1</a>
+                </li>
+                <li>
+                    <a href="project2.html">Projekt 2</a>
+                </li>
+                <li>
+                    <a href="project3.html">Projekt 3</a>
+                </li>
+                </ul>
+            </section>
+            <section class="contact">
+                <h2>Kontakta mig</h2>
+                <form action="skicka-email.php" method="POST">
+                    <fieldset>
+                        <legend>Fyll i formuläret för att kontakta mig:</legend>
     
-</body>
+                        <label for="name">Namn:</label>
+                        <input type="text" id="name" name="name" required>
+    
+                        <label for="email">E-post:</label>
+                        <input type="email" id="email" name="email" required>
+    
+                        <label for="message">Meddelande:</label>
+                        <textarea id="message" name="message" required></textarea>
+    
+                        <button type="submit">Skicka</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Alexandra Johansen</p>
+        </footer>
+    </div>
+
+    <script>
+      new Splide(".splide", {
+        type: "loop",
+        perPage: 1,
+        heightRatio: 0.5,
+      }).mount();
+    </script>
+  </body>
 </html>

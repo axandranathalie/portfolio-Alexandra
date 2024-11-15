@@ -6,12 +6,13 @@
     <title>Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <link
-      href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
@@ -28,80 +29,74 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <h2>Färdig frontend developer våren 2026</h2>
       </header>
 
-        <section class="splide" aria-label="Splide Basic HTML Example">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img src="images/blommor.jpg" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="images/fjärilar.jpg" alt="" />
-              </li>
-              <li class="splide__slide">
-                <img src="images/fåglar.jpg" alt="" />
-              </li>
-            </ul>
-          </div>
+      <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="images/portfolio-bild.jpg" alt="" width="1908" height="820" />
+            </li>
+            <li class="splide__slide">
+              <img src="images/citat1.jpg" alt="" width="1908" height="820" />
+            </li>
+            <li class="splide__slide">
+              <img src="images/citat2.jpg" alt="" width="1908" height="820" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <main>
+        <section class="om-mig">
+          <h3>Om mig</h3>
+          <p>
+            Hej! Jag heter Alexandra och utbildar mig till frontendutvecklare. Min bakgrund är mångsidig, med erfarenhet från förskola, vård och att driva en skönhetsalong i över sex år. Dessa erfarenheter har utvecklat min förmåga att förstå människors behov och att arbeta kreativt och kommunikativt, vilket jag nu tillämpar i min utvecklingskarriär.</p>
+          <p>
+            Jag har alltid haft ett intresse för estetik och design, vilket ledde mig till frontendutveckling. Jag brinner för att skapa användarvänliga och visuellt tilltalande lösningar på webben. UX är ett område jag ser fram emot att fördjupa mig i, då jag tror att bra design är avgörande för en framgångsrik webbplats.</p>
+          <p>
+            Jag är driven, målmedveten och ständigt nyfiken på att lära mig nya teknologier och metoder inom frontendutveckling.</p>
         </section>
-        <main>
-            <section class="om-mig">
-                <h3>Om mig</h3>
-                <p>
-                Jag är en 25-årig tjej som bor i Stockholm. Jag har alltid varit
-                intresserad av att skapa och designa. Jag har tidigare jobbat som
-                florist och har alltid tyckt om att skapa vackra arrangemang. Jag
-                har även en passion för att fotografera och har en stor samling
-                bilder på naturen.
-                </p>
-            </section>
-            <section class="projekt">
-                <h3>Projekt</h3>
-                <p>
-                Här är några av mina projekt som jag har gjort under min tid på
-                utbildningen. Jag har valt att visa upp några av mina favoriter.
-                </p>
-                <ul>
-                <li>
-                    <a href="project1.html">Projekt 1</a>
-                </li>
-                <li>
-                    <a href="project2.html">Projekt 2</a>
-                </li>
-                <li>
-                    <a href="project3.html">Projekt 3</a>
-                </li>
-                </ul>
-            </section>
-            <section class="contact">
-                <h2>Kontakta mig</h2>
-                <form action="skicka-email.php" method="POST">
-                    
-                        <legend>Fyll i formuläret för att kontakta mig:</legend>
-    
-                        <label for="name">Namn:</label>
-                        <input type="text" id="name" name="name" required>
-    
-                        <label for="email">E-post:</label>
-                        <input type="email" id="email" name="email" required>
-    
-                        <label for="message">Meddelande:</label>
-                        <textarea id="message" name="message" required></textarea>
-    
-                        <button type="submit">Skicka</button>
-                    
-                </form>
-            </section>
-        </main>
+        <section class="projekt">
+          <h3>Projekt</h3>
+          <p>
+            Här är några av mina projekt som jag har gjort under min tid på
+            utbildningen. Jag har valt att visa upp några av mina favoriter.
+          </p>
+          <ul>
+            <li>
+              <a href="#">Projekt 1</a>
+            </li>
+            <li>
+              <a href="#">Projekt 2</a>
+            </li>
+            <li>
+              <a href="#">Projekt 3</a>
+            </li>
+          </ul>
+        </section>
+        <section class="contact">
+          <h3>Kontakta mig</h3>
+          <form action="skicka-email.php" method="POST">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" required /> <br />
 
-        <footer>
-            <p>&copy; 2024 Alexandra Johansen</p>
-        </footer>
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required /> <br />
+
+            <label for="message">Meddelande:</label>
+            <textarea id="message" name="message" required></textarea> <br />
+
+            <button type="submit" aria-label="Skicka formulär">Skicka</button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Alexandra Johansen</p>
+      </footer>
     </div>
 
     <script>
       new Splide(".splide", {
         type: "loop",
-        perPage: 1,
         heightRatio: 0.5,
       }).mount();
     </script>

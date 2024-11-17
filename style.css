@@ -4,6 +4,66 @@
   background-color: rgb(249, 242, 234);
   font-family: "Inria Serif", serif;
 }
+
+.cookie-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #686666;
+    color: white;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    z-index: 1000; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .cookie-banner a {
+    color: #007bff;
+    text-decoration: none;
+    
+  }
+  
+  .cookie-banner a:hover {
+    text-decoration: underline;
+  }
+
+  .cookie-banner p {
+    background-color: #686666;
+  }
+  
+  .cookie-banner .accept-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 400px;
+  }
+  
+  .cookie-banner .accept-btn:hover {
+    background-color: #45a049;
+  }
+
+  .cookie-consent-checkbox {
+    display: none; 
+  }
+  
+  .cookie-consent-checkbox:checked + .cookie-banner {
+    display: none;
+  }
+  
+
+  
+
+  
+  
+
+  
 header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -144,6 +204,7 @@ h3 {
     margin-bottom: 20px;
   }
 }
+
 .contact h3, .contact label, .contact form {
     background-color: rgb(193, 212, 247);
   }
@@ -211,8 +272,6 @@ footer {
 }
 
 footer section,
-a,
-i,
-p {
+footer a, footer i, footer p {
   background-color: rgb(242, 234, 164);
 }

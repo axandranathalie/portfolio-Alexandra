@@ -17,13 +17,6 @@
   </head>
   <body>
 
-    <input type="checkbox" id="cookieConsent" class="cookie-consent-checkbox">
-    <div class="cookie-banner">
-        <p>För att kunna skicka ditt meddelande måste du godkänna vår 
-        <a href="integritetspolicy.html" target="_blank">integritetspolicy</a>.</p>
-        <label for="cookieConsent" class="accept-btn">Jag godkänner</label>
-    </div>
-
     <div class="wrapper">
       <header>
         <img
@@ -93,6 +86,11 @@
             <label for="message">Meddelande:</label>
             <textarea id="message" name="message" required></textarea> <br>
 
+            <label class="consent-label">
+                <input type="checkbox" name="consent" required>
+                Jag godkänner att mina personuppgifter behandlas enligt
+                <a href="integritetspolicy.html" target="_blank">integritetspolicyn</a>.
+              </label><br><br>
 
             <button type="submit" aria-label="Skicka formulär">Skicka</button>
           </form>

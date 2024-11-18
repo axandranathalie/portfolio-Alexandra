@@ -1,11 +1,10 @@
 * {
-  padding: 05px;
+  padding: 5px;
   margin: 0;
   background-color: rgb(249, 242, 234);
   font-family: "Inria Serif", serif;
 }
 
-  
 header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -57,16 +56,15 @@ main {
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
   margin-top: 5px;
-
 }
 
-main section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        text-align: center;
-      }
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
 h3 {
   font-size: 2rem;
 }
@@ -76,96 +74,108 @@ h3 {
   text-align: left;
   background-color: rgb(193, 247, 193);
 }
-.om-mig, .om-mig h3, .om-mig p {
-    background-color: rgb(193, 247, 193);
-  }
+.om-mig,
+.om-mig h3,
+.om-mig p {
+  background-color: rgb(193, 247, 193);
+}
 
 .projekt {
   grid-column: 5 / span 4;
   text-align: left;
   background-color: rgb(250, 212, 250);
-
-  p {
-    padding-bottom: 70px;
-  }
-
-  ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  ul li {
-    display: inline-block;
-  }
-
-  ul li a {
-    text-decoration: none;
-    color: #000003;
-    background-color: rgb(222, 221, 221);
-    font-size: 1.2rem;
-    border: 1px solid #000003;
-    padding: 2px 10px;
-    border-radius: 2px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-
-  ul li a:hover {
-    background-color: #030303;
-    color: white;
-  }
-
-  ul li a:focus {
-    outline: none;
-  }
 }
-.projekt h3, .projekt p, .projekt ul, .projekt li {
-    background-color: rgb(250, 212, 250);
-  }
+.projekt p {
+  padding-bottom: 70px;
+}
+
+.projekt ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projekt ul li {
+  display: inline-block;
+}
+
+.projekt ul li a {
+  text-decoration: none;
+  color: #000003;
+  background-color: rgb(222, 221, 221);
+  font-size: 1.2rem;
+  border: 1px solid #000003;
+  padding: 2px 10px;
+  border-radius: 2px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.projekt ul li a:hover {
+  background-color: #030303;
+  color: white;
+}
+
+.projekt ul li a:focus {
+  outline: none;
+}
+
+.projekt h3,
+.projekt p,
+.projekt ul,
+.projekt li {
+  background-color: rgb(250, 212, 250);
+}
 
 .contact {
   grid-column: 9 / span 4;
   background-color: rgb(193, 212, 247);
-  
-
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  input {
-    width: 300px;
-    margin-bottom: 20px;
-  }
-
-  textarea {
-    width: 300px;
-    height: 100px;
-    border: 2px solid black;
-    margin-bottom: 20px;
-  }
+}
+.contact label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-.contact h3, .contact label, .contact form {
-    background-color: rgb(193, 212, 247);
-  }
+.contact input {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.contact textarea {
+  width: 300px;
+  height: 100px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.consent-label input {
+  width: 1rem;
+}
+
+.contact h3,
+.contact label,
+.contact form,
+.contact a {
+  background-color: rgb(193, 212, 247);
+}
 
 .om-mig,
 .projekt,
 .contact {
   border: 1px solid black;
   padding: 0 10px;
-
-  h2 {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 1.1rem;
-    line-height: 1.2;
-    margin: 5px auto;
-  }
 }
+.om-mig p,
+.projekt p,
+.contact p {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin: 5px auto;
+}
+h2 {
+  font-size: 2rem;
+}
+
 button {
   background-color: #6762ed;
   color: white;
@@ -213,7 +223,9 @@ footer {
   padding: 10px 0 15px 0;
 }
 
-footer section,
-footer a, footer i, footer p {
+footer div,
+footer a,
+footer i,
+footer p {
   background-color: rgb(242, 234, 164);
 }
